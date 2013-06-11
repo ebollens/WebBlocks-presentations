@@ -1,0 +1,21 @@
+.reveal section > h1:not(.tight):not(:first-child), .reveal section > h2:not(.tight):not(:first-child), .reveal section > h3:not(.tight):not(:first-child), .reveal section > h4:not(.tight):not(:first-child) {
+    padding-top: 12px;
+    line-height: 1.2em;
+}
+
+.reveal h1 {
+    font-size: 3.5em;
+}
+
+.reveal h2 {
+    font-size: 2.4em;
+    letter-spacing: 2px;
+}
+
+.reveal h3 {
+    font-size: 1.4em;
+}
+
+.reveal h4 {
+    font-size: 1.2em;
+}
