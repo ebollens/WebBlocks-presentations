@@ -14,12 +14,12 @@
 
         <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-        <link rel="stylesheet" href="css/reveal.min.css">
-        <link rel="stylesheet" href="css/theme/default.css" id="theme">
-        <link rel="stylesheet" href="css/custom.css">
+        <link rel="stylesheet" href="../css/reveal.min.css">
+        <link rel="stylesheet" href="../css/theme/default.css" id="theme">
+        <link rel="stylesheet" href="../css/custom.css">
 
         <!-- For syntax highlighting -->
-        <link rel="stylesheet" href="lib/css/zenburn.css">
+        <link rel="stylesheet" href="../lib/css/zenburn.css">
 
         <!-- If the query includes 'print-pdf', use the PDF print sheet -->
         <script>
@@ -27,7 +27,7 @@
         </script>
 
         <!--[if lt IE 9]>
-        <script src="lib/js/html5shiv.js"></script>
+        <script src="../lib/js/html5shiv.js"></script>
         <![endif]-->
     </head>
 
@@ -107,9 +107,9 @@
                         <p class='fragment'>Flexible media</p>
                         <table class='fragment'>
                             <tr>
-                                <td><img src='introduction/images/responsive-marcotte-ex-1.png'></td>
-                                <td><img src='introduction/images/responsive-marcotte-ex-2.png'></td>
-                                <td><img src='introduction/images/responsive-marcotte-ex-3.png'></td>
+                                <td><img src='images/responsive-marcotte-ex-1.png'></td>
+                                <td><img src='images/responsive-marcotte-ex-2.png'></td>
+                                <td><img src='images/responsive-marcotte-ex-3.png'></td>
                             </tr>
                         </table>
                     </section>
@@ -118,8 +118,8 @@
                         <h2>An Example in the Wild</h2>
                         <table class='fragment'>
                             <tr>
-                                <td><img src='introduction/images/responsive-mwf-conference-ex-1.png'></td>
-                                <td><img src='introduction/images/responsive-mwf-conference-ex-2.png'></td>
+                                <td><img src='images/responsive-mwf-conference-ex-1.png'></td>
+                                <td><img src='images/responsive-mwf-conference-ex-2.png'></td>
                             </tr>
                         </table>
                     </section>
@@ -273,7 +273,7 @@
                 
                 <section>
                     <h2>Live Demo of Features</h2>
-                    <p><a href='http://ucla.github.io/WebBlocks/doc' target='_blank'>http://ucla.github.io/WebBlocks/doc</a></p>
+                    <p><a href='http://localhost/WebBlocks/doc' target='_blank'>http://ucla.github.io/WebBlocks/doc</a></p>
                 </section>
                 
                 <section>
@@ -287,10 +287,10 @@
                         <p class='fragment' style='margin-top:12px;'><em>Achieved through adapters</em></p>
                         <pre class="fragment" style="width:60%; margin:auto;"><code class="ruby">WebBlocks.config[:src][:adapter] = 'bootstrap'</code></pre>
                         <p class='fragment' style='padding-top:12px; margin-bottom:0; padding-bottom:0; line-height:1'>
-                            <small><a href='http://ucla.github.io/WebBlocks/doc/#Configuration/Compiler/Components' target='_blank'>http://ucla.github.io/WebBlocks/doc/#Configuration/Compiler/Components</a></small>
+                            <small><a href='http://localhost/WebBlocks/doc/#Configuration/Compiler/Components' target='_blank'>http://ucla.github.io/WebBlocks/doc/#Configuration/Compiler/Components</a></small>
                         </p>
                         <p class='fragment'>
-                            <small><a href='http://ucla.github.io/WebBlocks/doc/#Core/Architecture/Adapter' target='_blank'>http://ucla.github.io/WebBlocks/doc/#Core/Architecture/Adapter</a></small>
+                            <small><a href='http://localhost/WebBlocks/doc/#Core/Architecture/Adapter' target='_blank'>http://ucla.github.io/WebBlocks/doc/#Core/Architecture/Adapter</a></small>
                         </p>
                     </section>
                     <section>
@@ -303,13 +303,13 @@ WebBlocks.config[:src][:modules] << 'base'
 WebBlocks.config[:src][:modules] << 'compatibility'
 WebBlocks.config[:src][:modules] << 'entity/form'</code></pre>
                         <p class='fragment' style='padding-top:12px; margin-bottom:0; padding-bottom:0; line-height:1'>
-                            <small><a href='http://ucla.github.io/WebBlocks/doc/#API/Modules' target='_blank'>http://ucla.github.io/WebBlocks/doc/#API/Modules</a></small>
+                            <small><a href='http://localhost/WebBlocks/doc/#API/Modules' target='_blank'>http://ucla.github.io/WebBlocks/doc/#API/Modules</a></small>
                         </p>
                         <p class='fragment' style='margin-bottom:0; padding-bottom:0; line-height:1'>
-                            <small><a href='http://ucla.github.io/WebBlocks/doc/#Configuration/Compiler/Components' target='_blank'>http://ucla.github.io/WebBlocks/doc/#Configuration/Compiler/Components</a></small>
+                            <small><a href='http://localhost/WebBlocks/doc/#Configuration/Compiler/Components' target='_blank'>http://ucla.github.io/WebBlocks/doc/#Configuration/Compiler/Components</a></small>
                         </p>
                         <p class='fragment' style='margin-bottom:0; padding-bottom:0; line-height:1'>
-                            <small><a href='http://ucla.github.io/WebBlocks/doc/#Core/Architecture/Module' target='_blank'>http://ucla.github.io/WebBlocks/doc/#Core/Architecture/Module</a></small>
+                            <small><a href='http://localhost/WebBlocks/doc/#Core/Architecture/Module' target='_blank'>http://ucla.github.io/WebBlocks/doc/#Core/Architecture/Module</a></small>
                         </p>
                     </section>
                     <section>
@@ -341,13 +341,13 @@ WebBlocks.config[:src][:modules] << 'entity/form'</code></pre>
                         <p class='fragment'><em>Achieved through extensions</em></p>
                         <pre class="fragment" style="width:60%; margin:auto;"><code class="ruby">WebBlocks.config[:src][:extensions] << 'ucla'</code></pre>
                         <p class='fragment' style='padding-top:12px; margin-bottom:0; padding-bottom:0; line-height:1'>
-                            <small><a href='http://ucla.github.io/WebBlocks/doc/#Configuration/Compiler/Components' target='_blank'>http://ucla.github.io/WebBlocks/doc/#Configuration/Compiler/Components</a></small>
+                            <small><a href='http://localhost/WebBlocks/doc/#Configuration/Compiler/Components' target='_blank'>http://ucla.github.io/WebBlocks/doc/#Configuration/Compiler/Components</a></small>
                         </p>
                         <p class='fragment' style='margin-bottom:0; padding-bottom:0; line-height:1'>
-                            <small><a href='http://ucla.github.io/WebBlocks/doc/#Recipe/Integration/Fork' target='_blank'>http://ucla.github.io/WebBlocks/doc/#Recipe/Integration/Fork</a></small>
+                            <small><a href='http://localhost/WebBlocks/doc/#Recipe/Integration/Fork' target='_blank'>http://ucla.github.io/WebBlocks/doc/#Recipe/Integration/Fork</a></small>
                         </p>
                         <p class='fragment' style='margin-bottom:0; padding-bottom:0; line-height:1'>
-                            <small><a href='http://ucla.github.io/WebBlocks/doc/#Recipe/Integration/Submodule' target='_blank'>http://ucla.github.io/WebBlocks/doc/#Recipe/Integration/Submodule</a></small>
+                            <small><a href='http://localhost/WebBlocks/doc/#Recipe/Integration/Submodule' target='_blank'>http://ucla.github.io/WebBlocks/doc/#Recipe/Integration/Submodule</a></small>
                         </p>
                     </section>
                 </section>
@@ -381,7 +381,7 @@ WebBlocks.config[:src][:modules] << 'entity/form'</code></pre>
                     <section>
                         <h2>Collaboration</h2>
                         <p class='fragment'>Repository<br><small><a href="https://github.com/ucla/WebBlocks" target="_blank">https://github.com/ucla/WebBlocks</a></small></p>
-                        <p class='fragment'>Documentation<br><small><a href="http://ucla.github.io/WebBlocks/doc" target="_blank">http://ucla.github.io/WebBlocks/doc</a></small></p>
+                        <p class='fragment'>Documentation<br><small><a href="http://localhost/WebBlocks/doc" target="_blank">http://ucla.github.io/WebBlocks/doc</a></small></p>
                         <p class='fragment'>Issue Tracker<br><small><a href="https://github.com/ucla/WebBlocks/issues" target="_blank">https://github.com/ucla/WebBlocks/issues</a></small></p>
                         <p class='fragment'>Live Support<br><small><a href="https://webchat.freenode.net" target="_blank">irc.freenode.net</a> #WebBlocks</small></p>
                         <p class='fragment'>Mailing List<br><small><a href="http://lists.ucla.edu/cgi-bin/mailman/listinfo/webblocks" target="_blank">http://lists.ucla.edu/cgi-bin/mailman/listinfo/webblocks</a></small></p>
@@ -390,7 +390,7 @@ WebBlocks.config[:src][:modules] << 'entity/form'</code></pre>
 
                 <section>
                     <h1>THANK YOU</h1>
-                    <p><a href='http://ucla.github.io/WebBlocks/doc' target='_blank'>http://ucla.github.io/WebBlocks/doc</a></p>
+                    <p><a href='http://localhost/WebBlocks/doc' target='_blank'>http://ucla.github.io/WebBlocks/doc</a></p>
                     <br><br>
                     <p>
                         <small>
@@ -404,8 +404,8 @@ WebBlocks.config[:src][:modules] << 'entity/form'</code></pre>
 
         </div>
 
-        <script src="lib/js/head.min.js"></script>
-        <script src="js/reveal.min.js"></script>
+        <script src="../lib/js/head.min.js"></script>
+        <script src="../js/reveal.min.js"></script>
 
         <script>
 
@@ -422,14 +422,14 @@ WebBlocks.config[:src][:modules] << 'entity/form'</code></pre>
 
                 // Optional libraries used to extend on reveal.js
                 dependencies: [
-                        { src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
-                        { src: 'plugin/markdown/showdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
-                        { src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
-                        { src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
-                        { src: 'plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
-                        { src: 'plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }
-                        // { src: 'plugin/search/search.js', async: true, condition: function() { return !!document.body.classList; } }
-                        // { src: 'plugin/remotes/remotes.js', async: true, condition: function() { return !!document.body.classList; } }
+                        { src: '../lib/js/classList.js', condition: function() { return !document.body.classList; } },
+                        { src: '../plugin/markdown/showdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+                        { src: '../plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+                        { src: '../plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+                        { src: '../plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+                        { src: '../plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }
+                        // { src: '../plugin/search/search.js', async: true, condition: function() { return !!document.body.classList; } }
+                        // { src: '../plugin/remotes/remotes.js', async: true, condition: function() { return !!document.body.classList; } }
                 ]
             });
 
