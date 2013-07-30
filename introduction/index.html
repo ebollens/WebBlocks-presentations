@@ -234,9 +234,128 @@
                 </section>
                 
                 <section>
+                    
                     <section>
                         <h2>Extending WebBlocks</h2>
                     </section>
+                    
+                    <section>
+                        <h2>Customize Your Build</h2>
+                        <p class="fragment">Set colors, breakpoints and more through <strong>SASS variables</strong></p>
+                        <p class="fragment">WebBlocks includes over 200 configurable variables</p>
+                        <pre class="fragment" style="width:60%; margin-left:auto;margin-right:auto;"><code class="css">$color-branding-primary: #3399cc;
+$color-branding-secondary: #ffb300;
+$color-branding-tertiary: #8237ff;
+$color-mood-info: #00a5e5;
+$color-mood-success: #00ff87;
+$color-mood-warning: #ffe800;
+$color-mood-danger: #b73434;
+$color-mood-error: #b73434;
+$color-mood-required: #b73434;
+$color-mood-important: #ff00a5;
+$color-mood-highlight: #ff00a5;
+$color-mood-error: #a00;
+$color-mood-danger: #a00;</code></pre>
+                        <p class='fragment' style='padding-top:12px; margin-bottom:0; padding-bottom:0; line-height:1'>
+                            <small><a href='http://ucla.github.io/WebBlocks/doc/#API/Variables' target='_blank'>http://ucla.github.io/WebBlocks/doc/#API/Variables</a></small>
+                        </p>
+                    </section>
+                    
+                    <section>
+                        <h2>Modularize with Extensions</h2>
+                        <p class="fragment">Package up variables and custom CSS</p>
+                        <p class="fragment">Good for branding and feature extending</p>
+                        <pre class="fragment" style="width:80%; margin-left:auto;margin-right:auto;"><code class="ruby">WebBlocks.config[:src][:extensions] << 'ucla'</code></pre>
+                        <p class="fragment">Extensions can be mixed and matched</p>
+                        <pre class="fragment" style="width:80%; margin-left:auto;margin-right:auto;"><code class="ruby">WebBlocks.config[:src][:extensions] << 'ucla'
+WebBlocks.config[:src][:extensions] << 'flat-ui'</code></pre>
+                    </section>
+                    
+                    <section>
+                        <h2>Extensions for Federation</h2>
+                        <div class="small" style="position: relative; width:60%; margin:auto; font-size:0.6em; padding-top: 10px; padding-bottom: 20px; overflow:auto;">
+                            <div class="fragment" style="margin: 0;">
+                                <div style="margin: auto; background-color: #292e62; height: 2em; line-height: 2; text-align: center; width: 10em; border-radius: 0.5em;">Core</div>
+                            </div>
+                            <div class="fragment" style="margin: 0;">
+                                <div style="margin: auto; width: 0; border: 1px solid #999; height: 20px;"></div>
+                                <div style="width: 60%; margin: auto; height: 20px; border: 2px solid #aaa; border-bottom: none;"></div>
+                                <div style="margin: auto; position: relative; height: 2em;">
+                                    <div style="position: absolute; left: 0; background-color: #294c62; height: 2em; line-height: 2; text-align: center; width: 40%; border-radius: 0.5em;">Organization</div>
+                                    <div style="position: absolute; right: 0; background-color: #294c62; height: 2em; line-height: 2; text-align: center; width: 40%; border-radius: 0.5em;">Organization</div>
+                                </div>
+                            </div>
+                            <div class="fragment" style="margin: 0;">
+                                <div style="margin-left: 20%; width: 0; border: 1px solid #999; height: 20px; margin-bottom: 0;"></div>
+                                <div style="float: left; width: 20%; margin-left: 10%; height: 20px; border: 2px solid #aaa; border-bottom: none; margin-bottom: 0;"></div>
+                                <div style="float: left; width: 20%; height: 20px; border: 2px solid #aaa; border-bottom: none; border-left: none; margin-bottom: 0;"></div>
+                                <div style="float: left; width: 20%; height: 20px; border: 2px solid #aaa; border-bottom: none; border-left: none; margin-bottom: 0;"></div>
+                                <div style="clear: both; float:left; background-color: #3c6573; height: 2em; width: 15%; margin-left: 2.5%; line-height: 2; text-align: center; border-radius: 0.5em;">Unit</div>
+                                <div style="float:left; background-color: #3c6573; height: 2em; width: 15%; margin-left: 5%; line-height: 2; text-align: center; border-radius: 0.5em;">Site</div>
+                                <div style="float:left; background-color: #3c6573; height: 2em; width: 15%; margin-left: 5%; line-height: 2; text-align: center; border-radius: 0.5em;">Site</div>
+                                <div style="float:left; background-color: #3c6573; height: 2em; width: 15%; margin-left: 5%; line-height: 2; text-align: center; border-radius: 0.5em;">Site</div>
+                            </div>
+                        </div>
+                        <pre class="fragment" style="width:80%; margin-left:auto;margin-right:auto;"><code class="ruby">WebBlocks.config[:src][:extensions] << 'ucla'
+WebBlocks.config[:src][:extensions] << 'ucla-itservices'</code></pre>
+                        <p class='fragment' style='padding-top:12px; margin-bottom:0; padding-bottom:0; line-height:1'>
+                            <small><a href='http://localhost/WebBlocks/doc/#Configuration/Compiler/Components' target='_blank'>http://ucla.github.io/WebBlocks/doc/#Configuration/Compiler/Components</a></small>
+                        </p>
+                        <p class='fragment' style='margin-bottom:0; padding-bottom:0; line-height:1'>
+                            <small><a href='http://localhost/WebBlocks/doc/#Recipe/Integration/Fork' target='_blank'>http://ucla.github.io/WebBlocks/doc/#Recipe/Integration/Fork</a></small>
+                        </p>
+                    </section>
+                    
+                    <section>
+                        <h2>App-specific Sources</h2>
+                        <p class="fragment">When extensions aren't enough, add app-specific <strong>sources</strong></p>
+                        <p><em class='fragment'>override SASS variables</em>
+                            <br><em class='fragment'>add and override CSS definitions</em>
+                            <br><em class='fragment'>add Javascript, images and other assets</em>
+                        </p>
+                        <p class='fragment' style='margin-bottom:0; padding-bottom:0; line-height:1'>
+                            <small><a href='http://localhost/WebBlocks/doc/#Recipe/Integration/Use' target='_blank'>http://ucla.github.io/WebBlocks/doc/#Recipe/Integration/Use</a></small>
+                        </p>
+                        <p class='fragment'>And you can <strong>integrate the compiler into your build process</strong></p>
+                        <p class='fragment' style='margin-bottom:0; padding-bottom:0; line-height:1'>
+                            <small><a href='http://localhost/WebBlocks/doc/#Recipe/Integration/Submodule' target='_blank'>http://ucla.github.io/WebBlocks/doc/#Recipe/Integration/Submodule</a></small>
+                        </p>
+                    </section>
+                    
+                    <section>
+                        <h2>Reducing Switching Costs</h2>
+                        <p class="fragment">Switching frameworks can be an expensive ordeal</p>
+                        <p class="fragment"><strong>Adapters</strong> bind WebBlocks with another framework</p>
+                        <p class='fragment'>Zero switching costs for supported frameworks</p>
+                        <pre class="fragment" style="width:60%; margin-left:auto;margin-right:auto;"><code class="ruby">WebBlocks.config[:src][:adapter] = 'bootstrap'</code></pre>
+                        <p class='fragment' style='padding-top:12px; margin-bottom:0; padding-bottom:0; line-height:1'>
+                            <small><a href='http://ucla.github.io/WebBlocks/doc/#Configuration/Compiler/Components' target='_blank'>http://ucla.github.io/WebBlocks/doc/#Configuration/Compiler/Components</a></small>
+                        </p>
+                        <p class='fragment'>
+                            <small><a href='http://ucla.github.io/WebBlocks/doc/#Core/Architecture/Adapter' target='_blank'>http://ucla.github.io/WebBlocks/doc/#Core/Architecture/Adapter</a></small>
+                        </p>
+                    </section>
+                    
+                    <section>
+                        <h2>Leveraging Modularity</h2>
+                        <p class='fragment'>An extensive framework means a large footprint</p>
+                        <p class="fragment">All semantic elements are broken down into <strong>modules</strong></p>
+                        <p class='fragment'>Define a build with only specific modules</p>
+                        <pre class="fragment" style="margin-left:auto;margin-right:auto;"><code class="ruby">WebBlocks.config[:src][:modules] = []
+WebBlocks.config[:src][:modules] << 'base'
+WebBlocks.config[:src][:modules] << 'compatibility'
+WebBlocks.config[:src][:modules] << 'entity/form'</code></pre>
+                        <p class='fragment' style='padding-top:12px; margin-bottom:0; padding-bottom:0; line-height:1'>
+                            <small><a href='http://ucla.github.io/WebBlocks/doc/#API/Modules' target='_blank'>http://ucla.github.io/WebBlocks/doc/#API/Modules</a></small>
+                        </p>
+                        <p class='fragment' style='margin-bottom:0; padding-bottom:0; line-height:1'>
+                            <small><a href='http://ucla.github.io/WebBlocks/doc/#Configuration/Compiler/Components' target='_blank'>http://ucla.github.io/WebBlocks/doc/#Configuration/Compiler/Components</a></small>
+                        </p>
+                        <p class='fragment' style='margin-bottom:0; padding-bottom:0; line-height:1'>
+                            <small><a href='http://ucla.github.io/WebBlocks/doc/#Core/Architecture/Module' target='_blank'>http://ucla.github.io/WebBlocks/doc/#Core/Architecture/Module</a></small>
+                        </p>
+                    </section>
+                    
                 </section>
                 
                 <section>
