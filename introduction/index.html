@@ -103,10 +103,10 @@
                     </section>
 					
 					<section>
-						<h2>What is RWD?</h2>
+						<h2>What is Responsive Web Design?</h2>
 						
 						<p class="fragment" style="margin-bottom: 1em">
-							Website transforms to fit the <strong>User's needs</strong>
+							Website transforms to fit the <strong>user's needs</strong>
 							and <strong>capabilities</strong>
 						</p>
 						
@@ -161,15 +161,16 @@
 					<section>
 						<h2>Handrolling Responsive</h2>
 						
-						<p class="fragment" style="margin-bottom: 1em">
+						<p class="fragment">
 							Difficult <strong>problems</strong> to solve:
 						</p>
 						
-						<p class="fragment">Images</p>
-						<p class="fragment">Tables</p>
-						<p class="fragment">Navigation</p>
+						<p class="fragment"><em>Images</em></p>
+						<p class="fragment"><em>Tables</em></p>
+						<p class="fragment"><em>Navigation</em></p>
+						<p class="fragment"><em>Layouts</em></p>
 						
-						<p class="fragment" style="margin-top: 1em">
+						<p class="fragment">
 							Existing frameworks, components, and libraries<br/>
 							<strong>solve these problems</strong>
 						</p>
@@ -341,7 +342,7 @@
                         <h2>Customize Your Build</h2>
                         <p class="fragment">Set colors, breakpoints and more through <strong>SASS variables</strong></p>
                         <p class="fragment">WebBlocks includes over 200 configurable variables</p>
-                        <pre class="fragment" style="width:60%; margin-left:auto;margin-right:auto;"><code class="css">$color-branding-primary: #3399cc;
+                        <pre class="fragment" style="width:60%; margin-left:auto;margin-right:auto;"><code class="css">$color-branding-primary: #2288bb;
 $color-branding-secondary: #ffb300;
 $color-branding-tertiary: #8237ff;
 $color-mood-info: #00a5e5;
@@ -363,10 +364,10 @@ $color-mood-danger: #a00;</code></pre>
                         <h2>Modularize with Extensions</h2>
                         <p class="fragment">Package up variables and custom CSS</p>
                         <p class="fragment">Good for branding and feature extending</p>
-                        <pre class="fragment" style="width:80%; margin-left:auto;margin-right:auto;"><code class="ruby">WebBlocks.config[:src][:extensions] << 'ucla'</code></pre>
+                        <pre class="fragment" style="width:80%; margin-left:auto;margin-right:auto;"><code class="ruby">WebBlocks.config[:src][:extensions] &lt;&lt; 'ucla'</code></pre>
                         <p class="fragment">Extensions can be mixed and matched</p>
-                        <pre class="fragment" style="width:80%; margin-left:auto;margin-right:auto;"><code class="ruby">WebBlocks.config[:src][:extensions] << 'ucla'
-WebBlocks.config[:src][:extensions] << 'flat-ui'</code></pre>
+                        <pre class="fragment" style="width:80%; margin-left:auto;margin-right:auto;"><code class="ruby">WebBlocks.config[:src][:extensions] &lt;&lt; 'ucla'
+WebBlocks.config[:src][:extensions] &lt;&lt; 'flat-ui'</code></pre>
                     </section>
                     
                     <section>
@@ -394,13 +395,13 @@ WebBlocks.config[:src][:extensions] << 'flat-ui'</code></pre>
                                 <div style="float:left; background-color: #3c6573; height: 2em; width: 15%; margin-left: 5%; line-height: 2; text-align: center; border-radius: 0.5em;">Site</div>
                             </div>
                         </div>
-                        <pre class="fragment" style="width:80%; margin-left:auto;margin-right:auto;"><code class="ruby">WebBlocks.config[:src][:extensions] << 'ucla'
-WebBlocks.config[:src][:extensions] << 'ucla-itservices'</code></pre>
+                        <pre class="fragment" style="width:80%; margin-left:auto;margin-right:auto;"><code class="ruby">WebBlocks.config[:src][:extensions] &lt;&lt; 'ucla'
+WebBlocks.config[:src][:extensions] &lt;&lt; 'ucla-itservices'</code></pre>
                         <p class='fragment' style='padding-top:12px; margin-bottom:0; padding-bottom:0; line-height:1'>
-                            <small><a href='http://localhost/WebBlocks/doc/#Configuration/Compiler/Components' target='_blank'>http://ucla.github.io/WebBlocks/doc/#Configuration/Compiler/Components</a></small>
+                            <small><a href='http://ucla.github.io/WebBlocks/doc/#Configuration/Compiler/Components' target='_blank'>http://ucla.github.io/WebBlocks/doc/#Configuration/Compiler/Components</a></small>
                         </p>
                         <p class='fragment' style='margin-bottom:0; padding-bottom:0; line-height:1'>
-                            <small><a href='http://localhost/WebBlocks/doc/#Recipe/Integration/Fork' target='_blank'>http://ucla.github.io/WebBlocks/doc/#Recipe/Integration/Fork</a></small>
+                            <small><a href='http://ucla.github.io/WebBlocks/doc/#Recipe/Integration/Fork' target='_blank'>http://ucla.github.io/WebBlocks/doc/#Recipe/Integration/Fork</a></small>
                         </p>
                     </section>
                     
@@ -412,11 +413,11 @@ WebBlocks.config[:src][:extensions] << 'ucla-itservices'</code></pre>
                             <br><em class='fragment'>add Javascript, images and other assets</em>
                         </p>
                         <p class='fragment' style='margin-bottom:0; padding-bottom:0; line-height:1'>
-                            <small><a href='http://localhost/WebBlocks/doc/#Recipe/Integration/Use' target='_blank'>http://ucla.github.io/WebBlocks/doc/#Recipe/Integration/Use</a></small>
+                            <small><a href='http://ucla.github.io/WebBlocks/doc/#Recipe/Integration/Use' target='_blank'>http://ucla.github.io/WebBlocks/doc/#Recipe/Integration/Use</a></small>
                         </p>
                         <p class='fragment'>And you can <strong>integrate the compiler into your build process</strong></p>
                         <p class='fragment' style='margin-bottom:0; padding-bottom:0; line-height:1'>
-                            <small><a href='http://localhost/WebBlocks/doc/#Recipe/Integration/Submodule' target='_blank'>http://ucla.github.io/WebBlocks/doc/#Recipe/Integration/Submodule</a></small>
+                            <small><a href='http://ucla.github.io/WebBlocks/doc/#Recipe/Integration/Submodule' target='_blank'>http://ucla.github.io/WebBlocks/doc/#Recipe/Integration/Submodule</a></small>
                         </p>
                     </section>
                     
@@ -440,9 +441,11 @@ WebBlocks.config[:src][:extensions] << 'ucla-itservices'</code></pre>
                         <p class="fragment">All semantic elements are broken down into <strong>modules</strong></p>
                         <p class='fragment'>Define a build with only specific modules</p>
                         <pre class="fragment" style="margin-left:auto;margin-right:auto;"><code class="ruby">WebBlocks.config[:src][:modules] = []
-WebBlocks.config[:src][:modules] << 'base'
-WebBlocks.config[:src][:modules] << 'compatibility'
-WebBlocks.config[:src][:modules] << 'entity/form'</code></pre>
+WebBlocks.config[:src][:modules] &lt;&lt; 'base'
+WebBlocks.config[:src][:modules] &lt;&lt; 'compatibility'
+WebBlocks.config[:src][:modules] &lt;&lt; 'entity/button'
+WebBlocks.config[:src][:modules] &lt;&lt; 'entity/form'
+WebBlocks.config[:src][:modules] &lt;&lt; 'entity/message'</code></pre>
                         <p class='fragment' style='padding-top:12px; margin-bottom:0; padding-bottom:0; line-height:1'>
                             <small><a href='http://ucla.github.io/WebBlocks/doc/#API/Modules' target='_blank'>http://ucla.github.io/WebBlocks/doc/#API/Modules</a></small>
                         </p>
@@ -486,7 +489,7 @@ WebBlocks.config[:src][:modules] << 'entity/form'</code></pre>
                     <section>
                         <h2>WebBlocks CMS Integrations</h2>
                         <p class='fragment'>
-                            <strong>Pattern</strong>
+                            <strong>Integration pattern</strong>
                         </p>
                         <p><em class='fragment'><strong>Theme</strong> with integrated WebBlocks build process</em>
                             <br><em class='fragment'><strong>Configuration plugin</strong> that calls out to build server</em>
