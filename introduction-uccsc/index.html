@@ -7,7 +7,7 @@
         <title>Introduction to WebBlocks</title>
 
         <meta name="description" content="This presentation introduces WebBlocks, a responsive web toolkit that defines integrates and extends modern web frameworks, defines rich semantics and provides extensive configurability.">
-        <meta name="author" content="Eric R. Bollens">
+        <meta name="author" content="Eric R. Bollens and Logan D. Franken">
 
         <meta name="apple-mobile-web-app-capable" content="yes" />
         <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
@@ -42,14 +42,24 @@
                     
                     <h2 class='tight'>Introdution to</h2>
                     <h1 class='tight'>WebBlocks</h1>
-                    <h3 style="padding-top:48px;">by Eric Bollens</h3>
-                    <p>
+                    
+                    <div style='width:47.5%; margin-right: 2.5%; float:left; text-align:right; margin-top: 2em;'>
+                        <h3>Eric Bollens
+                        <br>
                         <small>
-                            <a href="https://github.com/ebollens" target="_blank">ebollens [GitHub]</a> 
-                            / <a href="https://linkedin.com/in/ebollens" target="_blank">ebollens [LinkedIn]</a> 
-                            / <a href="http://twitter.com/ericbollens" target="_blank">@ericbollens [Twitter]</a>
+                            <a href="https://github.com/ebollens" target="_blank">ebollens [GitHub]</a>
+                            <br><a href="http://twitter.com/ericbollens" target="_blank">@ericbollens [Twitter]</a>
                         </small>
-                    </p>
+                    </div>
+                    
+                    <div style='width:47.5%; margin-left: 2.5%; float:left; text-align:left; margin-top: 2em;'>
+                        <h3>Logan Franken
+                        <br>
+                        <small>
+                            <a href="https://github.com/loganfranken" target="_blank">[GitHub] loganfranken</a>
+                            <br><a href="https://twitter.com/loganfranken" target="_blank">[Twitter] @loganfranken</a>
+                        </small>
+                    </div>
                     
                 </section>
                 
@@ -94,62 +104,72 @@
 					
 					<section>
 						<h2>What is Responsive Web Design?</h2>
-						<p class="fragment">
-							Website transforms to fit the user's<br><strong>needs</strong>
+						
+						<p class="fragment" style="margin-bottom: 1em">
+							Website transforms to fit the <strong>user's needs</strong>
 							and <strong>capabilities</strong>
 						</p>
-						<p class="fragment" style='font-style:italic'>Viewport
-                            <br><span class="fragment">Context</span>
-                            <br><span class="fragment">Bandwidth</span>
-                            <br><span class="fragment">Pixel Density</span>
-                            <br><span class="fragment">Battery Life</span></p>
+						
+						<p class="fragment">Browser Size</p>
+						<p class="fragment">Viewing Context</p>
+						<p class="fragment">Bandwidth</p>
+						<p class="fragment">Pixel Density</p>
+						<p class="fragment">Battery Life</p>
 					</section>
 					
 					<section>
 						<h2>Three Components</h2>
+						
 						<p class="fragment">Media queries</p>
 						<p class="fragment">Responsive media</p>
 						<p class="fragment">Flexible grid</p>
 					</section>
 					
 					<section>
+						<h2>Mobile First</h2>
+						
                         <table>
                             <tr>
-                                <td class="fragment"><img src='images/responsive-marcotte-ex-1.png'></td>
-                                <td class="fragment"><img src='images/responsive-marcotte-ex-2.png'></td>
-                                <td class="fragment"><img src='images/responsive-marcotte-ex-3.png'></td>
+                                <td class="fragment"><img src='images/responsive-ex-alberta-1.png'></td>
+                                <td class="fragment"><img src='images/responsive-ex-alberta-2.png'></td>
+                                <td class="fragment"><img src='images/responsive-ex-alberta-3.png'></td>
                             </tr>
                         </table>
+
 					</section>
 					
 					<section>
+						<h2>Mobile First</h2>
+						
                         <table>
                             <tr>
-                                <td class="fragment"><img src='images/responsive-ucsd-ex-1.png'></td>
-                                <td class="fragment"><img src='images/responsive-ucsd-ex-2.png'></td>
-                                <td class="fragment"><img src='images/responsive-ucsd-ex-3.png'></td>
+                                <td class="fragment"><img src='images/responsive-ex-arkansas-1.png'></td>
+                                <td class="fragment"><img src='images/responsive-ex-arkansas-2.png'></td>
+                                <td class="fragment"><img src='images/responsive-ex-arkansas-3.png'></td>
                             </tr>
                         </table>
+
 					</section>
 					
 					<section>
-						<h2>Benefits of Responsive Design</h2>
-                        <ol>
-                            <li class="fragment">Save time and money</li>
-                            <li class="fragment">Stay relevant to all viewers</li>
-                            <li class="fragment">Don't guess at what the user wants</li>
-                            <li class="fragment">Provide a consistent experience</li>
-                            <li class="fragment">Future proof</li>
-                        </ol>
+						<h2>Benefits</h2>
+						
+						<p class="fragment">One Experience</p>
+						<p class="fragment">Future Proof</p>
 					</section>
 					
 					<section>
 						<h2>Handrolling Responsive</h2>
-						<p class="fragment"><strong>Difficult problems to solve</strong></p>
+						
+						<p class="fragment">
+							Difficult <strong>problems</strong> to solve:
+						</p>
+						
 						<p class="fragment"><em>Images</em></p>
 						<p class="fragment"><em>Tables</em></p>
 						<p class="fragment"><em>Navigation</em></p>
 						<p class="fragment"><em>Layouts</em></p>
+						
 						<p class="fragment">
 							Existing frameworks, components, and libraries<br/>
 							<strong>solve these problems</strong>
@@ -158,18 +178,23 @@
 					
 					<section>
 						<h2>Framework Paralysis</h2>
+						
 						<p class="fragment">
 							<strong>5+</strong> responsive frameworks
 						</p>
+						
 						<p class="fragment">
 							<strong>10+</strong> responsive grid systems
 						</p>
+						
 						<p class="fragment">
 							<strong>20+</strong> responsive image solutions
 						</p>
+						
 						<p class="fragment">
 							<strong>7+</strong> responsive table solutions
 						</p>
+						
 						<p class="fragment" style="margin-top: 1em;">We don't need a new framework</p>
 						<p class="fragment"><strong>We need to integrate</strong></p>
 					</section>
@@ -476,45 +501,13 @@ WebBlocks.config[:src][:modules] &lt;&lt; 'entity/message'</code></pre>
                     </section>
                     
                     <section>
-                        <h2>WebBlocks 1.1</h2>
-                        <p class='fragment'><strong>Focus on elements and libraries</strong></p>
-                        <p class='fragment'><em>
-                            New UI elements
-                            <br><span class='fragment'>Existing UI elements</span>
-                            <br><span class='fragment'>New Javascript libraries</span>
-                            <br><span class='fragment'>Expanded package offerings</span>
-                        </em></p>
-                        <p class='fragment'><strong>Currently requirements gathering</strong></p>
-                        <p class='fragment'><em><a href='https://github.com/ucla/WebBlocks/issues?milestone=9' target='_blank'>github.com/ucla/WebBlocks/issues?milestone=9</a></em></p>
-                        <p class='fragment'><strong><em>Slated for Winter</em></strong></p>
-                    </section>
-                    
-                    <section>
-                        <h2>WebBlocks 2.0</h2>
-                        <p class='fragment'>WebBlocks 1 has grown organically
-                            <br><span class='fragment'>WebBlocks 2 shall build on lessons learned</span></p>
-                        <p class='fragment'><strong>Overhaul of internal architecture</strong></p>
-                        <p class='fragment'><em>
-                            Everything as a module
-                            <br><span class='fragment'>Bower for component management</span>
-                            <br><span class='fragment'>DSL for dependency management</span>
-                            <br><span class='fragment'>Compilation via topological sort</span>
-                        </em></p>
-                    </section>
-                    
-                    <section>
-                        <h2>WebBlocks 2.0</h2>
-                        <p class='fragment'>Advantages...</p>
-                        <p class='fragment'><em>
-                            Remove confusion between modular types
-                            <br><span class='fragment'>Reduce barriers to entry</span>
-                            <br><span class='fragment'>Trend towards microframeworks</span>
-                            <br><span class='fragment'>Simplify adding third-party packages</span>
-                            <br><span class='fragment'>Explicit control rather than implicit convention</span>
-                            <br><span class='fragment'>Substantial compiler performance improvements</span>
-                        </em></p>
-                        <p class='fragment'>Changes may be needed for advanced users<br><strong class='fragment'>but backwards compatibility for element/library APIs</strong></p>
-                        <p class='fragment'><strong><em>Slated for Spring</em></strong></p>
+                        <h2>WebBlocks 1.1 and 2.0</h2>
+                        <p class='fragment'>Scoping and development of <strong>additional UI semantics</strong></p>
+                        <p class='fragment'>Improvements on <strong>existing UI elements</strong></p>
+                        <p class='fragment'>New <strong>Javascript interactivity features</strong></p>
+                        <p class='fragment'>Additional <strong>configuration options</strong></p>
+                        <p class='fragment'>Expanded <strong>package library</strong></p>
+                        <p class='fragment'>Refactored <strong>internals</strong></p>
                     </section>
                     
                     <section>
@@ -530,16 +523,26 @@ WebBlocks.config[:src][:modules] &lt;&lt; 'entity/message'</code></pre>
 
                 <section>
                     <h1>THANK YOU</h1>
-                    <h3>Any Questions?</h3>
-                    <p><br><a href="http://ebollens.github.io/WebBlocks-presentations/introduction/" target="_blank">ebollens.github.io/WebBlocks-presentations/introduction</a></p>
-                    <br>
-                    <p>
+
+                    <h3><a href='http://ebollens.github.io/WebBlocks-presentations/introduction' target='_blank'>ebollens.github.io/WebBlocks-presentations/introduction</a></h3>
+                    <div style='width:47.5%; margin-right: 2.5%; float:left; text-align:right; margin-top: 2em;'>
+                        <h3>Eric Bollens
+                        <br>
                         <small>
-                            <a href="https://github.com/ebollens" target="_blank">ebollens [GitHub]</a> 
-                            / <a href="https://linkedin.com/in/ebollens" target="_blank">ebollens [LinkedIn]</a> 
-                            / <a href="http://twitter.com/ericbollens" target="_blank">@ericbollens [Twitter]</a>
+                            <a href="https://github.com/ebollens" target="_blank">ebollens [GitHub]</a>
+                            <br><a href="http://twitter.com/ericbollens" target="_blank">@ericbollens [Twitter]</a>
                         </small>
-                    </p>
+                    </div>
+
+                    <div style='width:47.5%; margin-left: 2.5%; float:left; text-align:left; margin-top: 2em;'>
+                        <h3>Logan Franken
+                        <br>
+                        <small>
+                            <a href="https://github.com/loganfranken" target="_blank">[GitHub] loganfranken</a>
+                            <br><a href="https://twitter.com/loganfranken" target="_blank">[Twitter] @loganfranken</a>
+                        </small>
+                    </div>
+                        
                 </section>
 
             </div>
