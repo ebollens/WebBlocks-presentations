@@ -63,12 +63,12 @@
                         <h2>A Growing Audience</h2>
                         <p class="fragment">First we had desktop browsers</p>
                         <p class="fragment">then we had mobile browsers</p>
-                        <p class="fragment">and now we have tablets and more</p>
-                        <p class='fragment'><strong>How do we deliver to every platform?</strong></p>
+                        <p class="fragment">and now we've tablets and more</p>
+                        <h3 class='fragment'>How do we deliver to every platform?</h3>
                     </section>
                     
                     <section>
-                        <h2>Approaching Mobile</h2>
+                        <h2>Tackling Mobile</h2>
                         <p class="fragment">Native apps<br>
                         <em class='fragment'>iOS SDK, Android SDK, etc.</em></p>
                         <p class="fragment">Mobile web apps<br>
@@ -81,7 +81,7 @@
                         <h2>Are these the right approach?</h2>
                         <p class='fragment'>Do we need a separate experience for mobile?</p>
                         <p class='fragment'>How do we tackle tablets and other devices?</p>
-                        <p class='fragment'><strong>How about a single site to handle all?</strong></p>
+                        <h3 class='fragment'>How about a single site to handle all?</h3>
                     </section>
                     
                 </section>
@@ -170,7 +170,7 @@
 						<p class="fragment">
 							<strong>7+</strong> responsive table solutions
 						</p>
-						<p class="fragment" style="margin-top: 1em;">We don't need to start from scratch</p>
+						<p class="fragment" style="margin-top: 1em;">We don't need a new framework</p>
 						<p class="fragment"><strong>We need to integrate</strong></p>
 					</section>
 					
@@ -228,456 +228,6 @@
                     </section>
                     
                     <section>
-                        <h2>Features</h2>
-                        <table style='width:800px; margin: auto;'>
-                            <tbody><tr class="fragment">
-                                <td style='vertical-align: top'>
-                                    <p class="text-right"><strong>Responsive Design</strong></p>
-                                </td>
-                                <td>
-                                    <ul class="small" style="margin-bottom: 24px;">
-                                        <li>Fluid Grid</li>
-                                        <li>Media Queries</li>
-                                        <li>Flexible Media</li>
-                                    </ul>
-                                </td>
-                            </tr>
-                            <tr class="fragment">
-                                <td style='vertical-align: top'>
-                                    <p class="text-right"><strong>Support Libraries</strong></p>
-                                </td>
-                                <td>
-                                    <ul class="small" style="margin-bottom: 24px;">
-                                        <li>Browser Normalization</li>
-                                        <li>Capability Detection</li>
-                                        <li>Polyfills</li>
-                                    </ul>
-                                </td>
-                            </tr>
-                            <tr class="fragment">
-                                <td style='vertical-align: top'>
-                                    <p class="text-right"><strong>Rich Interfaces</strong></p>
-                                </td>
-                                <td>
-                                    <ul class="small">
-                                        <li>User Interface Elements</li>
-                                        <li>Javascript Interactivity</li>
-                                        <li>Server-side Components</li>
-                                    </ul>
-                                </td>
-                            </tr>
-                        </tbody></table>
-                    </section>
-                    
-                </section>
-                
-                <section>
-                    
-                    <section>
-                        <h2>Getting Started with WebBlocks</h2>
-                    </section>
-                    
-                    <section>
-                        <h2>Getting WebBlocks</h2>
-                        <div class="fragment">
-                            <p><strong>Download a WebBlocks release build</strong></p>
-                            <p><a href="https://github.com/ucla/WebBlocks/releases" target="_blank">https://github.com/ucla/WebBlocks/releases</a></p>
-                        </div>
-                        <div class="fragment">
-                            <p style="margin-top:24px;"><strong>Compile WebBlocks from source</strong></p>
-                            <p><a href="https://github.com/ucla/WebBlocks" target="_blank">https://github.com/ucla/WebBlocks</a></p>
-                        </div>
-                        <div class="fragment">
-                            <p style="margin-top:24px;"><strong>Additional methods coming soon</strong></p>
-                            <p>
-                                <em>Online build tool</em>
-                                <br>
-                                <em>Hosted version</em>
-                            </p>
-                        </div>
-                    </section>
-                    
-                    <section>
-                        <h2>Setting up the Page</h2>
-                        <pre class="prettyprint" style="font-size:18px;"><code><span class="fragment">&lt;!DOCTYPE html&gt;</span>
-&lt;html lang="en"&gt;
-    &lt;head&gt;
-        &lt;title&gt;&lt;!-- title --&gt;&lt;/title&gt;
-        &lt;meta http-equiv="Content-Type" content="text/html; charset=UTF-8"&gt;
-<span class="fragment">        &lt;link rel="stylesheet" href="css/blocks.css"&gt;
-        &lt;script type="text/javascript" src="js/blocks.js"&gt;&lt;/script&gt;</span>
-<span class="fragment">        &lt;!--[if lte IE 9]&gt;
-        &lt;link rel="stylesheet" href="css/blocks-ie.css"&gt;
-        &lt;script type="text/javascript" src="js/blocks-ie.js"&gt;&lt;/script&gt;
-        &lt;![endif]--&gt;</span>
-<span class="fragment">        &lt;meta name="viewport" content="width=device-width, initial-scale=1"&gt;</span>
-    &lt;/head&gt;
-    &lt;body&gt;
-        &lt;!-- ... --&gt;
-    &lt;/body&gt;
-&lt;/html&gt;</code></pre>
-                    </section>
-                    
-                    <section>
-                        <h2>Container</h2>
-                        <p class="fragment">Controls content width and margins</p>
-                        <pre class="prettyprint fragment"><code>&lt;div class="container"&gt;
-    &lt;!-- contents --&gt;
-&lt;/div&gt;</code></pre>
-                        <p class="fragment">Most elements should be placed in a container</p>
-                        <p class="fragment"><em>excluding navbars and other full-page elements</em></p>
-                    </section>
-                    
-                    <section>
-                        <h2>Grid System</h2>
-                        <p class="fragment">A <strong>row</strong> composed of <strong>panels</strong></p>
-                        <pre class="prettyprint fragment"><code>&lt;div class="row"&gt;
-    &lt;div class="panel-3"&gt;&lt;!-- ~25% --&gt;&lt;/div&gt;
-    &lt;div class="panel-7"&gt;&lt;!-- ~58.3% --&gt;&lt;/div&gt;
-    &lt;div class="panel-2"&gt;&lt;!-- ~16.7% --&gt;&lt;/div&gt;
-&lt;/div&gt;
-&lt;div class="row right"&gt;
-    &lt;div class="panel-2"&gt;&lt;!-- ~16.7% --&gt;&lt;/div&gt;
-    &lt;div class="panel-10"&gt;&lt;!-- ~83.3% --&gt;&lt;/div&gt;
-&lt;/div&gt;</code></pre>
-                        <p class="fragment">
-                            <em><strong>panel-X</strong> between 1 and 12 with a % width <strong>~ X/12</strong></em>
-                            <br>
-                            <em class="fragment">Use the <strong>right</strong> class on <strong>row</strong> for right-to-left</em>
-                            <br>
-                            <em class="fragment">Always collapses in markup order</em>
-                            <br>
-                            <em class="fragment">Rows may be nested</em>
-                        </p>
-                    </section>
-                    
-                    <section>
-                        <h2>Laying out a Page<br><small>Two-column</small></h2>
-                        <pre class="prettyprint fragment"><code>&lt;div class="row"&gt;
-    &lt;nav class="panel-3"&gt;&lt;!-- left-side navigation --&gt;&lt;/nav&gt;
-    &lt;main class="panel-9"&gt;&lt;!-- main content --&gt;&lt;/main&gt;
-&lt;/div&gt;</code></pre>
-                        <pre class="prettyprint fragment"><code>&lt;div class="row right"&gt;
-    &lt;nav class="panel-3"&gt;&lt;!-- right-side navigation --&gt;&lt;/nav&gt;
-    &lt;main class="panel-9"&gt;&lt;!-- main content --&gt;&lt;/main&gt;
-&lt;/div&gt;</code></pre>
-                        <pre class="prettyprint fragment"><code>&lt;div class="row"&gt;
-    &lt;main class="panel-9"&gt;&lt;!-- main content --&gt;&lt;/main&gt;
-    &lt;aside class="panel-3"&gt;&lt;!-- right-side support --&gt;&lt;/aside&gt;
-&lt;/div&gt;</code></pre>
-                    </section>
-                    
-                    <section>
-                        <h2>Laying out a Page<br><small>Three-column</small></h2>
-                        <pre class="prettyprint fragment"><code>&lt;div class="row"&gt;
-    &lt;nav class="panel-3"&gt;&lt;!-- left-side navigation --&gt;&lt;/nav&gt;
-    &lt;main class="panel-6"&gt;&lt;!-- main content --&gt;&lt;/main&gt;
-    &lt;aside class="panel-3"&gt;&lt;!-- right-side support --&gt;&lt;/aside&gt;
-&lt;/div&gt;</code></pre>
-                        <pre class="prettyprint fragment"><code>&lt;div class="row"&gt;
-    &lt;nav class="panel-3"&gt;&lt;!-- left-side navigation --&gt;&lt;/nav&gt;
-    &lt;div class="row right"&gt;
-        &lt;nav class="panel-4"&gt;&lt;!-- right-side navigation --&gt;&lt;/nav&gt;
-        &lt;main class="panel-8"&gt;&lt;!-- main content --&gt;&lt;/main&gt;
-    &lt;/div&gt;
-&lt;/div&gt;</code></pre>
-                    </section>
-                    
-                    <section>
-                        <h2>Grid System Breakpoints</h2>
-                        <p class="fragment">Seven breakpoints available</p>
-                        <table style="font-size:0.6em; width:70%; margin:0 auto 10px;" cellspacing="0" class="fragment">
-                            <tr>
-                                <td>xxsmall</td><td>360px</td>
-                                <td style="width:100px"></td>
-                                <td>medium</td><td>960px</td>
-                            </tr>
-                            <tr>
-                                <td>xsmall</td><td>480px</td>
-                                <td style="width:100px"></td>
-                                <td>medium-large</td><td>1024px</td>
-                            </tr>
-                            <tr>
-                                <td>small</td><td>640px</td>
-                                <td style="width:100px"></td>
-                                <td>large</td><td>1200px</td>
-                            </tr>
-                            <tr>
-                                <td>medium-small</td><td>768px</td>
-                            </tr>
-                        </table>
-                        <p class="fragment">Use <strong>Y-collapse</strong> on <strong>row</strong> for breakpoint <strong>Y</strong></p>
-                        <pre class="prettyprint fragment" style="width:70%"><code>&lt;div class="row medium-collapse"&gt;
-    &lt;div class="panel-6"&gt;&lt;!-- ~25% --&gt;&lt;/div&gt;
-    &lt;div class="panel-6"&gt;&lt;!-- ~58.3% --&gt;&lt;/div&gt;
-&lt;/div&gt;</code></pre>
-                    </section>
-                    
-                    <section>
-                        <h2>Flexible Content Arrangement</h2>
-                        <pre class="prettyprint fragment"><code>&lt;div class="row medium-collapse"&gt;
-    &lt;div class="panel-6"&gt;
-        &lt;div class="row small-collapse"&gt;
-            &lt;div class="panel-6"&gt;&lt;!-- item 1 --&gt;&lt;/div&gt;
-            &lt;div class="panel-6"&gt;&lt;!-- item 2 --&gt;&lt;/div&gt;
-        &lt;/div&gt;
-    &lt;/div&gt;
-    &lt;div class="panel-6"&gt;
-        &lt;div class="row small-collapse"&gt;
-            &lt;div class="panel-6"&gt;&lt;!-- item 3 --&gt;&lt;/div&gt;
-            &lt;div class="panel-6"&gt;&lt;!-- item 4 --&gt;&lt;/div&gt;
-        &lt;/div&gt;
-    &lt;/div&gt;</code></pre>
-                        <p class="fragment">
-                            <em>4 columns above medium breakpoint</em>
-                            <br>
-                            <em class="fragment">2 rows of 2 columns between medium and small breakpoint</em>
-                            <br>
-                            <em class="fragment">4 full-width items below small breakpoint</em>
-                        </p>
-                    </section>
-                    
-                    <section>
-                        <h2>Visibility, Floats and Alignment</h2>
-                        <table style="font-size:24px; margin:auto">
-                            <tr class="fragment">
-                                <td>
-                                    <table style="font-weight: bold">
-                                        <tr><td style="width:160px">hide</td><td style="width:100px"></td></tr>
-                                    </table>
-                                </td>
-                                <td>
-                                    <table cellspacing="0" class="fragment">
-                                        <tr><td style="width:160px">hide-Y</td><td style="width:100px"></td><td>hide-above-Y</td></tr>
-                                    </table>
-                                </td>
-                            </tr>
-                            <tr class="fragment">
-                                <td>
-                                    <table style="font-weight: bold">
-                                        <tr><td style="width:160px">float-left</td><td style="width:100px"></td></tr>
-                                        <tr><td style="width:160px">float-right</td><td style="width:100px"></td></tr>
-                                    </table>
-                                </td>
-                                <td>
-                                    <table cellspacing="0" class="fragment">
-                                        <tr><td style="width:160px">float-left-Y</td><td style="width:100px"></td><td>float-left-above-Y</td></tr>
-                                        <tr><td style="width:160px">float-right-Y</td><td style="width:100px"></td><td>float-right-above-Y</td></tr>
-                                    </table>
-                                </td>
-                            </tr>
-                            <tr class="fragment">
-                                <td>
-                                    <table style="font-weight: bold">
-                                        <tr><td style="width:160px">text-left</td><td style="width:100px"></td></tr>
-                                        <tr><td style="width:160px">text-center</td><td style="width:100px"></td></tr>
-                                        <tr><td style="width:160px">text-right</td><td style="width:100px"></td></tr>
-                                        <tr><td style="width:160px">text-justify</td><td style="width:100px"></td></tr>
-                                    </table>
-                                </td>
-                                <td>
-                                    <table cellspacing="0" class="fragment">
-                                        <tr><td style="width:160px">text-left-Y</td><td style="width:100px"></td><td>text-left-above-Y</td></tr>
-                                        <tr><td style="width:160px">text-center-Y</td><td style="width:100px"></td><td>text-center-above-Y</td></tr>
-                                        <tr><td style="width:160px">text-right-Y</td><td style="width:100px"></td><td>text-right-above-Y</td></tr>
-                                        <tr><td style="width:160px">text-justify-Y</td><td style="width:100px"></td><td>text-justify-above-Y</td></tr>
-                                    </table>
-                                </td>
-                            </tr>
-                            <tr class="fragment" style="font-weight:bold">
-                                <td>
-                                    <table style="font-weight: bold">
-                                        <tr><td style="width:160px">constrained</td><td style="width:100px"></td></tr>
-                                    </table>
-                                </td>
-                            </tr>
-                        </table>
-                    </section>
-                    
-                    <section>
-                        <h2>Mixing &amp; Matching Breakpoints</h2>
-                        <pre class="prettyprint fragment" style="font-size:18px"><code>&lt;section class="row medium-small-collapse"&gt;
-<span class="fragment">    &lt;div class="panel-4"&gt;
-<span class="fragment">        &lt;div class="row xsmall-collapse"&gt;
-<span class="fragment">            &lt;div class="panel-4 <span class="fragment">text-center-xsmall</span> <span class="fragment">hide-xxsmall</span>"&gt;
-                &lt;img src="img/articles/1.jpg" class="<span class="fragment">constrained</span>"&gt;
-            &lt;/div&gt;
-<span class="fragment">            &lt;div class="panel-8"&gt;
-<span class="fragment">                &lt;h1 class="<span class="fragment">text-center-xsmall</span>"&gt;&lt;!-- article title --&gt;
-                    &lt;br&gt;&lt;small&gt;&lt;!-- tagline --&gt;&lt;/small&gt;&lt;/h1&gt;
-                &lt;p class="<span class="fragment">hide-medium-small</span>"&gt;&lt;!-- description --&gt;&lt;/p&gt;
-                &lt;p class="<span class="fragment">text-center-xsmall</span> <span class="fragment">text-right-above-xsmall</span>"&gt;
-                    &lt;a href="article/1"&gt;&lt;!-- read more prompt --&gt;&lt;/a&gt;&lt;/p&gt;</span>
-            &lt;/div&gt;</span>
-</span>        &lt;/div&gt;
-</span>    &lt;/div&gt;
-    &lt;!-- and two more... --&gt;</span>
-&lt;/section&gt;</code></pre>
-                    </section>
-                    
-                    <section>
-                        <h2>Color System</h2>
-                        <p class="fragment">Branding colors</p>
-                        <p class="fragment"><em><small>primary, secondary, tertiary, neutral</small></em></p>
-                        <p class="fragment">Mood colors</p>
-                        <p class="fragment"><em><small>info, success, warning, error, danger, important, inverse, required, highlight</small></em></p>
-                        <p class="fragment">Variation modifiers</p>
-                        <p class="fragment"><em><small>gradient, light, dark, emphasize, fade</small></em></p>
-                        <p class="fragment">Text colors</p>
-                        <p class="fragment"><em><small>Append "-text" to a branding or mood color</small></em></p>
-                        <pre class="prettyprint fragment" style="width:70%; text-align:center"><code>&lt;div class="primary gradient light text-tertiary"&gt;</code></pre>
-                    </section>
-                    
-                    <section>
-                        <h2>Buttons, Badges and Messages</h2>
-                        <pre class="prettyprint fragment" style="font-size:18px"><code>&lt;a href="path/to/link" class="button"&gt;&lt;!-- button text --&gt;&lt;/a&gt;
-<span class="fragment">&lt;input type="submit" href="path/to/link" class="button <span class="fragment">success</span>"&gt;</span>
-<span class="fragment">&lt;button class="button primary<span class="fragment"> light</span>"&gt;&lt;!-- button text --&gt;&lt;/a&gt;</span>
-</code></pre>
-                        <pre class="prettyprint fragment" style="font-size:18px"><code>&lt;span class="badge <span class="fragment">warning</span>"&gt;&lt;!-- badge text --&gt;&lt;/span&gt;
-<span class="fragment">&lt;span class="badge danger <span class="fragment">square</span>"&gt;&lt;!-- badge text --&gt;&lt;/span&gt;</span>
-<span class="fragment">&lt;span class="badge secondary <span class="fragment">round</span> <span class="fragment">light gradient</span>"&gt;&lt;!-- badge text --&gt;&lt;/span&gt;</span></code></pre>
-                        <pre class="prettyprint fragment" style="font-size:18px"><code>&lt;div class="message"&gt;&lt;!-- message text --&gt;&lt;/div&gt;
-<span class="fragment">&lt;div class="message <span class="fragment">primary</span>"&gt;&lt;!-- message text --&gt;&lt;/div&gt;</span>
-<span class="fragment">&lt;div class="message danger <span class="fragment">gradient</span> <span class="fragment">emphasize</span>"&gt;&lt;!-- message text --&gt;&lt;/div&gt;</span></code></pre>
-                    </section>
-                    
-                    <section>
-                        <h2>Forms</h2>
-                        <pre class="prettyprint" style="font-size:17px"><code>&lt;form action="to/action" method="post" class="form <span class="fragment">horizontal</span>"&gt;
-<span class="fragment">    &lt;div class="control"&gt;
-<span class="fragment">        <span class="fragment">&lt;label for="input"&gt;&lt;!-- label text --&gt;&lt;/label&gt;</span>
-        &lt;input id="input"&gt;</span>
-    &lt;/div&gt;</span>
-<span class="fragment">    &lt;div class="control secondary"&gt;
-        &lt;label for="text"&gt;&lt;!-- label text --&gt;&lt;/label&gt;
-        &lt;textarea id="text"<span class="fragment"> class="large"</span><span class="fragment"> aria-describedby="text-desc"</span>&gt;&lt;/textarea&gt;
-        <span class="fragment">&lt;p id="input2-desc"&gt;&lt;!-- help text --&gt;&lt;/p&gt;</span>
-    &lt;/div&gt;</span>
-<span class="fragment">    &lt;div class="control"&gt;
-        &lt;label id="checkset"&gt;&lt;!-- label text --&gt;&lt;/label&gt;
-<span class="fragment">        <span class="fragment">&lt;div class="inline"&gt;</span>
-            &lt;label&gt;&lt;input type="checkbox" aria-labelledby="checkset"&gt; first&lt;/label&gt;
-            &lt;label&gt;&lt;input type="checkbox" aria-labelledby="checkset"&gt; second&lt;/label&gt;
-        <span class="fragment">&lt;/div&gt;</span></span>
-    &lt;/div&gt;</span>
-<span class="fragment">    &lt;div class="control"&gt;&lt;input type="submit" class="button"&gt;&lt;/div&gt;</span>
-&lt;/form&gt;</code></pre>
-                    </section>
-                    
-                    <section>
-                        <h2>Navigation List</h2>
-                        <pre class="prettyprint fragment" style="font-size:16px;"><code>&lt;nav class="list"&gt;
-    &lt;ul&gt;
-        &lt;li&gt;&lt;a&gt;Item 1&lt;/a&gt;&lt;/li&gt;
-        &lt;li&gt;&lt;a&gt;Item 2&lt;/a&gt;&lt;/li&gt;
-        &lt;li&gt;&lt;a&gt;Item 3&lt;/a&gt;&lt;/li&gt;
-    &lt;/ul&gt;
-&lt;/nav&gt;</code></pre>
-                        <pre class="prettyprint fragment" style="font-size:16px;"><code>&lt;nav class="list"&gt;
-    &lt;h1&gt;List Header&lt;/h1&gt;
-    &lt;ul&gt;
-        &lt;li&gt;&lt;a&gt;Item 1&lt;/a&gt;&lt;/li&gt;
-        &lt;li&gt;&lt;h2&gt;Item 2&lt;/h2&gt;
-            &lt;ul&gt;
-                &lt;li&gt;&lt;a&gt;Item 2 Sub 1&lt;/a&gt;&lt;/li&gt;
-                &lt;li&gt;&lt;a&gt;Item 2 Sub 2&lt;/a&gt;&lt;/li&gt;
-            &lt;/ul&gt;
-            &lt;ul class="divider"&gt;
-                &lt;li&gt;&lt;a&gt;Item 2 Sub 3&lt;/a&gt;&lt;/li&gt;
-                &lt;li&gt;&lt;a&gt;Item 2 Sub 4&lt;/a&gt;&lt;/li&gt;
-            &lt;/ul&gt;
-        &lt;/li&gt;
-        &lt;li&gt;&lt;a&gt;Item 3&lt;/a&gt;&lt;/li&gt;
-    &lt;/ul&gt;
-&lt;/nav&gt;</code></pre>
-                        <p class="fragment"><small>plus <strong>accordion</strong> and <strong>flyout</strong> effects</small></p>
-                    </section>
-                    
-                    <section>
-                        <h2>Navigation Bar</h2>
-                        <p class="fragment">Bar collapsing to dropdown when it overflows</p>
-                        <pre class="prettyprint fragment" style="font-size:18px;"><code>&lt;nav class="bar"&gt;
-    &lt;ul&gt;
-        &lt;li&gt;&lt;a&gt;Item 1&lt;/a&gt;&lt;/li&gt;
-        &lt;li&gt;&lt;a&gt;Item 2&lt;/a&gt;&lt;/li&gt;
-        &lt;li&gt;&lt;a&gt;Item 3&lt;/a&gt;&lt;/li&gt;
-    &lt;/ul&gt;
-&lt;/nav&gt;</code></pre>
-                        <pre class="prettyprint fragment" style="font-size:18px;"><code>&lt;nav class="bar <span class="fragment">primary</span>"&gt;
-    &lt;!-- list of menu items --&gt;
-&lt;/nav&gt;</code></pre>
-                        <pre class="prettyprint fragment" style="font-size:18px;"><code>&lt;nav class="bar secondary <span class="fragment">light</span> <span class="fragment">top</span>"&gt;
-    &lt;!-- list of menu items --&gt;
-&lt;/nav&gt;</code></pre>
-                        <pre class="prettyprint fragment" style="font-size:18px;"><code>&lt;nav class="bar tertiary <span class="fragment">dark</span> <span class="fragment">bottom</span>"&gt;
-    &lt;!-- list of menu items --&gt;
-&lt;/nav&gt;</code></pre>
-                    </section>
-                    
-                    <section>
-                        <h2>Navigation Breadcrumb</h2>
-                        <pre class="prettyprint fragment" style="font-size:16px;"><code>&lt;nav class="breadcrumb"&gt;
-    &lt;ul&gt;
-        &lt;li&gt;&lt;a&gt;Item 1&lt;/a&gt;&lt;/li&gt;
-        &lt;li&gt;&lt;a&gt;Item 2&lt;/a&gt;&lt;/li&gt;
-        &lt;li&gt;&lt;a&gt;Item 3&lt;/a&gt;&lt;/li&gt;
-    &lt;/ul&gt;
-&lt;/nav&gt;</code></pre>
-                        <pre class="prettyprint fragment" style="font-size:16px;"><code>&lt;nav class="breadcrumb"&gt;
-    &lt;ul&gt;
-        &lt;li&gt;&lt;a&gt;Item 1&lt;/a&gt; &lt;span class="divider"&gt;/&lt;/span&gt;&lt;/li&gt;
-        &lt;li&gt;&lt;a&gt;Item 2&lt;/a&gt; &lt;span class="divider"&gt;/&lt;/span&gt;&lt;/li&gt;
-        &lt;li&gt;&lt;a&gt;Item 3&lt;/a&gt; &lt;span class="divider"&gt;/&lt;/span&gt;&lt;/li&gt;
-    &lt;/ul&gt;
-&lt;/nav&gt;</code></pre>
-                    </section>
-                    
-                    <section>
-                        <h2>Client-side Images<br><small>available in v1.1 only</small></h2>
-                        <pre class="prettyprint fragment" style="font-size:17px"><code>&lt;span data-picture data-alt="Example image"&gt;
-<span class="fragment">    &lt;span data-src="small.jpg"&gt;&lt;/span&gt;</span>
-<span class="fragment">    &lt;span data-src="small-hi.jpg" data-media="<span class="fragment">(min-resolution: 300dpi)</span>"&gt;&lt;/span&gt;</span>
-<span class="fragment">    &lt;span data-src="medium.jpg" data-media="<span class="fragment">(min-width: 321px)</span>"&gt;&lt;/span&gt;</span>
-<span class="fragment">    &lt;span data-src="medium-hi.jpg"
-          data-media="<span class="fragment">(min-width: 321px) and (min-resolution: 300dpi)</span>"&gt;&lt;/span&gt;</span>
-<span class="fragment">    &lt;span data-src="large.jpg" data-media="(min-width: 961px)"&gt;&lt;/span&gt;
-    &lt;span data-src="large-hi.jpg" 
-          data-media="(min-width: 961px) and (min-resolution: 300dpi)"&gt;&lt;/span&gt;</span>
-<span class="fragment">    &lt;noscript&gt;&lt;img src="large.jpg" alt="Example image"&gt;&lt;/noscript&gt;</span>
-&lt;/span&gt;</code></pre>
-                        <pre class="prettyprint fragment" style="font-size:18px"><code>&lt;img src="small.jpg" srcset="small.jpg 320w, 
-<span class="fragment">          small-hi.jpg 320w 2x, </span>
-<span class="fragment">          medium.jpg 960w, 
-          medium-hi.jpg 960w 2x, </span>
-<span class="fragment">          large.jpg 1600w, 
-          large-hi.jpg 2x</span>"&gt;</code></pre>
-                    </section>
-                    
-                    <section>
-                        <h2>Server-side Images<br><small>available in v1.1 only</small></h2>
-                        <p class="fragment">Adaptive Images</p>
-                        <p class="fragment"><small><a href="http://adaptive-images.com" target="_blank">http://adaptive-images.com</a></small></p>
-                        <p class="fragment">Client Hints</p>
-                        <pre class="prettyprint fragment" style="width:40%;text-align:center"><code>dh=598, dw=384, dpr=2.0</code></pre>
-                        <p class="fragment">Adaptive Images with Client Hints</p>
-                        <p class="fragment"><small><a href="https://github.com/ebollens/Adaptive-Images" target="_blank">https://github.com/ebollens/Adaptive-Images</a></small></p>
-                    </section>
-                    
-                    <section>
-                        <h2>And a lot more</h2>
-                        <p><a href="http://ucla.github.io/WebBlocks" target="_blank">http://ucla.github.io/WebBlocks</a></p>
-                    </section>
-                    
-                </section>
-                
-                <section>
-                    
-                    <section>
-                        <h2>Beyond Semantics</h2>
-                    </section>
-                    
-                    <section>
                         <h2>WebBlocks is a Toolkit</h2>
                         <p class='fragment'>Pick and choose among supported <strong>packages</strong></p>
                         <p class='fragment'>Select modules of <strong>semantic elements</strong></p>
@@ -706,9 +256,57 @@
                             <span class='fragment'>or configure and run the compiler</span><br>
                             <span class='fragment'>or integrate it into an existing build process</span></p>
                     </section>
-                
-                </section>
                     
+                    <section>
+                        <h2>But what's in the framework?</h2>
+                        <table style='width:800px; margin: auto;'>
+                            <tbody><tr class="fragment">
+                                <td style='vertical-align: top'>
+                                    <p class="text-right"><strong>Responsive Design</strong></p>
+                                </td>
+                                <td>
+                                    <ul class="small" style="margin-bottom: 24px;">
+                                        <li>Fluid Grid</li>
+                                        <li>Media Queries</li>
+                                        <li>Flexible Media</li>
+                                    </ul>
+                                </td>
+                            </tr>
+                            <tr class="fragment">
+                                <td style='vertical-align: top'>
+                                    <p class="text-right"><strong>Support Libraries</strong></p>
+                                </td>
+                                <td>
+                                    <ul class="small" style="margin-bottom: 24px;">
+                                        <li>Browser Normalization</li>
+                                        <li>Capability Detection</li>
+                                        <li>HTML5 &amp; CSS3 Polyfills</li>
+                                    </ul>
+                                </td>
+                            </tr>
+                            <tr class="fragment">
+                                <td style='vertical-align: top'>
+                                    <p class="text-right"><strong>Rich Interfaces</strong></p>
+                                </td>
+                                <td>
+                                    <ul class="small">
+                                        <li>User Interface Elements</li>
+                                        <li>Javascript Interactivity</li>
+                                        <li>Server-side Components</li>
+                                    </ul>
+                                </td>
+                            </tr>
+                        </tbody></table>
+                    </section>
+                    
+                </section>
+                
+                <section>
+                    <section>
+                        <h2>Getting Started with WebBlocks</h2>
+                    </section>
+                </section>
+                
                 <section>
                     
                     <section>
@@ -844,7 +442,7 @@ WebBlocks.config[:src][:modules] &lt;&lt; 'entity/message'</code></pre>
                     
                     <section>
                         <h2>WebBlocks 1.0</h2>
-                        <p class='fragment'>Initially released on <strong>June 21, 2013</strong></p>
+                        <p class='fragment'>Production release on <strong>June 21, 2013</strong></p>
                         <p class='fragment'>Download and build from sources:
                             <br><a href='https://github.com/ucla/WebBlocks' target='_blank'>https://github.com/ucla/WebBlocks</a>
                         </p>
@@ -860,7 +458,7 @@ WebBlocks.config[:src][:modules] &lt;&lt; 'entity/message'</code></pre>
                         <p class='fragment'>Available for download:
                             <br><a href='https://github.com/ucla/WebBlocks-build-server'>https://github.com/ucla/WebBlocks-build-server</a>
                         </p>
-                        <p class='fragment'>ITS will be hosting a build server instance</p>
+                        <p class='fragment'>UCLA will soon be deploying a publicly available instance</p>
                     </section>
                     
                     <section>
@@ -879,25 +477,34 @@ WebBlocks.config[:src][:modules] &lt;&lt; 'entity/message'</code></pre>
                     
                     <section>
                         <h2>WebBlocks 1.1</h2>
-                        <p class="fragment" style="margin-bottom:0;padding-bottom:0;"><strong>Rich User Interfaces</strong></p>
-                        <p class="fragment"><em style="font-size:0.8em">Mega-menu, slideshow, gallery, calendar, navbar enhancements</em></p>
-                        <p class="fragment" style="margin-bottom:0;padding-bottom:0;"><strong>Text and Media</strong></p>
-                        <p class="fragment"><em style="font-size:0.8em">Adaptive images, responsive tables, font assets, print support, drawing layers</em></p>
-                        <p class="fragment" style="margin-bottom:0;padding-bottom:0;"><strong>Core</strong></p>
-                        <p class="fragment"><em style="font-size:0.8em;">Package updates, external package support, new configuration options</em></p>
-                        <p class='fragment'><strong><em>Coming this winter</em></strong></p>
+                        <p class='fragment'><strong>Focus on elements and libraries</strong></p>
+                        <p class='fragment'><em>
+                            New UI elements
+                            <br><span class='fragment'>Existing UI elements</span>
+                            <br><span class='fragment'>New Javascript libraries</span>
+                            <br><span class='fragment'>Expanded package offerings</span>
+                        </em></p>
+                        <p class='fragment'><strong>Currently requirements gathering</strong></p>
+                        <p class='fragment'><em><a href='https://github.com/ucla/WebBlocks/issues?milestone=9' target='_blank'>github.com/ucla/WebBlocks/issues?milestone=9</a></em></p>
+                        <p class='fragment'><strong><em>Slated for Winter</em></strong></p>
                     </section>
                     
                     <section>
                         <h2>WebBlocks 2.0</h2>
                         <p class='fragment'>WebBlocks 1 has grown organically
-                            <br><span class='fragment'>WebBlocks 2 will build on lessons learned</span></p>
-                        <p class='fragment'><strong>Overhaul of modular architecture</strong></p>
+                            <br><span class='fragment'>WebBlocks 2 shall build on lessons learned</span></p>
+                        <p class='fragment'><strong>Overhaul of internal architecture</strong></p>
+                        <p class='fragment'><em>
+                            Everything as a module
+                            <br><span class='fragment'>Bower for component management</span>
+                            <br><span class='fragment'>DSL for dependency management</span>
+                            <br><span class='fragment'>Compilation via topological sort</span>
+                        </em></p>
                     </section>
                     
                     <section>
                         <h2>WebBlocks 2.0</h2>
-                        <p class='fragment'>Goals...</p>
+                        <p class='fragment'>Advantages...</p>
                         <p class='fragment'><em>
                             Remove confusion between modular types
                             <br><span class='fragment'>Reduce barriers to entry</span>
@@ -907,16 +514,7 @@ WebBlocks.config[:src][:modules] &lt;&lt; 'entity/message'</code></pre>
                             <br><span class='fragment'>Substantial compiler performance improvements</span>
                         </em></p>
                         <p class='fragment'><strong>Backwards compatible for end users</strong><br><span class='fragment'>although some work for advanced users</span></p>
-                        <p class='fragment'><strong><em>Slated for Summer</em></strong></p>
-                    </section>
-                    
-                    <section>
-                        <h2>WebBlocks at UCLA</h2>
-                        <p class="fragment"><strong>OIT Web Team</strong> packaging with Drupal platform</p>
-                        <p class="fragment"><strong>ITS IMS</strong> will soon be packaging with Plone platform</p>
-                        <p class="fragment"><strong>Various partners</strong> using for one-off websites</p>
-                        <p class="fragment"><strong>UCLA-specific WebBlocks build</strong> coming soon</p>
-                        <p class="fragment"><strong>Web Design Guide</strong> in the works using WebBlocks</p>
+                        <p class='fragment'><strong><em>Slated for Spring</em></strong></p>
                     </section>
                     
                     <section>
@@ -933,7 +531,7 @@ WebBlocks.config[:src][:modules] &lt;&lt; 'entity/message'</code></pre>
                 <section>
                     <h1>THANK YOU</h1>
                     <h3>Any Questions?</h3>
-                    <p><br><a href="http://ebollens.github.io/WebBlocks-presentations/introduction/" target="_blank">ebollens.github.io/WebBlocks-presentations/introduction</a></p>
+                    <p><br><a href="http://ebollens.github.io/WebBlocks-presentations/introduction-mmwcon/" target="_blank">ebollens.github.io/WebBlocks-presentations/introduction</a></p>
                     <br>
                     <p>
                         <small>
